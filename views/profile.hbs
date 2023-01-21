@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <!--  This file has been downloaded from bootdey.com @bootdey on twitter -->
     <!--  All snippets are MIT license http://bootdey.com/license -->
-    <title>CodeMate: Profile</title>
+    <title>Techens: Profile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     {{!-- <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> --}}
@@ -20,7 +20,7 @@
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <a class="navbar-brand" href="/">CodeMate</a>
+        <a class="navbar-brand" href="/">Techens</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -80,7 +80,7 @@
                     <div class="text-left m-t-40">
                         <p class="text-muted font-13"><strong>Full Name :</strong> <span class="m-l-15">{{curUser.username}}</span></p>
                         <p class="text-muted font-13"><strong>Mobile :</strong><span class="m-l-15">(123) 123 1234</span></p>
-                        <p class="text-muted font-13"><strong>Email :</strong> <span class="m-l-15">{{curUser.username}}@g</span></p>
+                        <p class="text-muted font-13"><strong>Email :</strong> <span class="m-l-15">{{curUser.username}}@gmail.com</span></p>
                         <p class="text-muted font-13"><strong>Location :</strong> <span class="m-l-15">USA</span></p>
                     </div>
 
@@ -264,11 +264,11 @@
                             <form role="form">
                                 <div class="form-group">
                                     <label for="FullName">Full Name</label>
-                                    <input type="text" value="John Doe" id="FullName" class="form-control">
+                                    <input type="text" value={{ currentUser.username }} id="FullName" class="form-control">
                                 </div>
                                 <div class="form-group">
                                     <label for="Email">Email</label>
-                                    <input type="email" value="first.last@example.com" id="Email" class="form-control">
+                                    <input type="email" value={{ currentUser.username }}".gmail.com" id="Email" class="form-control">
                                 </div>
                                 <div class="form-group">
                                     <label for="Username">Username</label>
