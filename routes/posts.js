@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router({ mergeParams: true });
-const Post = require("../models/file");
+const Post = require("../models/post");
 const middleware = require("../middleware");
 
 router.get("/", (req, res) => {

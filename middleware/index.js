@@ -1,4 +1,4 @@
-const Post = require("../models/file");
+const Post = require("../models/post");
 const Comment = require("../models/comment");
 
 //all the middleware goes here
