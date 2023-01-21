@@ -24,7 +24,7 @@ const mongo_uri = process.env.mongo_uri;
 //   }
 // );
 
-
+mongoose.set('strictQuery', false)
 const connectDB = async () => {
   try {
     const conn = await mongoose.connect(process.env.MONGO_URI);
