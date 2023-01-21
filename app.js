@@ -85,7 +85,7 @@ let port = process.env.PORT || 3030;
 // });
 
 connectDB().then(() => {
-  app.listen(PORT, () => {
+  app.listen(port, () => {
       console.log("listening for requests");
   })
 })
