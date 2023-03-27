@@ -49,6 +49,7 @@ const postRoutes = require("./routes/posts");
 const indexRoutes = require("./routes/index");
 const userRoutes = require("./routes/user");
 const profileRoutes = require("./routes/profile");
+const fileRoutes = require("./routes/file");
 //---------------------------------------------
 
 //------------PASSPORT CONFIGURATION-----------
@@ -77,6 +78,7 @@ app.use("/posts", postRoutes);
 app.use("/posts/:id/comments", commentRoutes);
 app.use("/user", userRoutes);
 app.use("/profile", profileRoutes);
+app.use("/file", fileRoutes);
 
 let port = process.env.PORT || 3030;
 
